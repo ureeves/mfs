@@ -82,8 +82,8 @@ static long msf_ioctl(struct file *filep, unsigned int cmd, unsigned long arg) {
 
 }
 
-static const char *device_name = "mfs";
-static const char *device_class = "mfs_class";
+static const char *device_name = "msf";
+static const char *device_class = "msf_class";
 
 static const struct file_operations fops = {
     .owner = THIS_MODULE,

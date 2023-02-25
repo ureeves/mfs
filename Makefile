@@ -1,4 +1,4 @@
-obj-m += mfs.o
+obj-m += msf.o
 PWD := $(CURDIR)
 
 all:

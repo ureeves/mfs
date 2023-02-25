@@ -68,13 +68,13 @@ static long msf_ioctl(struct file *filep, unsigned int cmd, unsigned long arg) {
 
     switch (cmd) {
         case MSF_SNAP_CMD:
-            pr_info("Received snap from userspace: %p\n", addr);
+            pr_info("Received `snap` from userspace: %p\n", addr);
             return msf_snap(addr);
         case MSF_APPLY_CMD:
-            pr_info("Received apply from userspace: %p\n", addr);
+            pr_info("Received `apply` from userspace: %p\n", addr);
             return msf_apply(addr);
         case MSF_FORGET_CMD:
-            pr_info("Received forget from userspace: %p\n", addr);
+            pr_info("Received `forget` from userspace: %p\n", addr);
             return msf_forget(addr);
         default:
             return -ENOTTY;

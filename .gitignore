@@ -2,6 +2,7 @@
 *.o
 *.mod*
 *.ko
+*.d
 
 Module.symvers
 modules.order
